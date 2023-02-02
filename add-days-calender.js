@@ -42,7 +42,7 @@ function getDaysApi() {
         }
 
     }
-    fetch('http://localhost:5000/SEAN/HARRISON').then(res => res.json()).then(data => {
+    fetch('https://calendar-api-latest.herokuapp.com/SEAN/HARRISON').then(res => res.json()).then(data => {
         // var days = getDays();
         console.log(data.list);
         if (data.list.length > 1) {
