@@ -1,8 +1,8 @@
 function getData() {
     //SEAN HARRISON
     //JUSTIN GOMES
-    var name = 'JUSTIN&SEAN';
-    var surname = 'GOMES&HARRISON';
+    var name = 'SEAN&JUSTIN';
+    var surname = 'HARRISON&GOMES';
     var role = ('SENIOR ART DIRECTOR/ CD&SENIOR ART DIRECTOR/ CD').replace('/', '-').replace('/', '-');
     var client_name = document.querySelector('.e_name').value;
     var client_email = document.querySelector('.e_email').value;
