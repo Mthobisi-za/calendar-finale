@@ -42,7 +42,7 @@ function getDaysApi() {
         }
 
     }
-    fetch('https://calendar-api-latest.herokuapp.com/KARIN/BARRY-MCCORMACK').then(res => res.json()).then(data => {
+    fetch('https://calendar-api-latest.herokuapp.com/PAIGE/NICK').then(res => res.json()).then(data => {
         // var days = getDays();
         console.log(data.list);
         if (data.list.length > 1) {

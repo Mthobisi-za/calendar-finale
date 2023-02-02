@@ -1,8 +1,8 @@
 function getData() {
     //SEAN HARRISON
-    var name = 'KARIN';
-    var surname = 'BARRY-MCCORMACK';
-    var role = ('SENIOR ART DIRECTOR/ CD').replace('/', '-').replace('/', '-');
+    var name = 'PAIGE';
+    var surname = 'NICK';
+    var role = ('SENIOR COPYWRITER/ CD').replace('/', '-').replace('/', '-');
     var client_name = document.querySelector('.e_name').value;
     var client_email = document.querySelector('.e_email').value;
     var client_company = document.querySelector('.e_com').value;
