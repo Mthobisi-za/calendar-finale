@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js" integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="calendar">
+        <div class="calendar-top">
+            <button class="icons prev" id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <div class="top">
+                <h3 id="monthYear"></h3>
+            </div>
+            <button class="icons next" id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="calendar-bottom">
+            <div class="days-of-week">
+                <div class="zero">
+                    <p>SUN</p>
+                </div>
+                <div class="one">
+                    <p>MON</p>
+                </div>
+                <div class="two">
+                    <p>TUE</p>
+                </div>
+                <div class="three">
+                    <p>WED</p>
+                </div>
+                <div class="four">
+                    <p>THUR</p>
+                </div>
+                <div class="five">
+                    <p>FRI</p>
+                </div>
+                <div class="six">
+                    <p>SAT</p>
+                </div>
+
+            </div>
+            <br>
+            <div class="days"></div>
+            <p id="content"></p>
+
+        </div>
+
+    </div>
+    <div class="input-fields">
+        <div class="input-group">
+            <input value="" class="form-control e_name" type="text" name="text-1542372332072" id="text-1542372332072" required="required" placeholder="Name">
+            <label for="text-1542372332072">Full names</label>
+            <div class="req-mark">!</div>
+        </div> <br>
+        <div class="input-group">
+            <input value="" class="form-control e_email" type="email" name="text-1542372332072" id="text-1542372332072" required="required" placeholder="Email">
+            <label for="text-1542372332072">Email</label>
+            <div class="req-mark">!</div>
+        </div>
+        <br>
+        <div class="input-group">
+            <input value="" class="form-control e_com" type="text" name="text-1542372332072" id="text-1542372332072" required="required" placeholder="Company Name">
+            <label for="text-1542372332072">Company Name</label>
+            <div class="req-mark">!</div>
+        </div>
+    </div>
+    <br>
+    <div class="booking">
+        <div class="left">
+            <label for="from">From</label>
+            <br>
+            <input type="date" id="from" class="fromd">
+        </div>
+        <div class="right">
+            <label for="to">To</label>
+            <br>
+            <input type="date" id="to" class="tod">
+        </div>
+    </div>
+    <div class="btn-holder">
+        <button class="sub">Book Talent</button>
+    </div>
+    <br> <br> <br>
+    <script src="./load-calendar-handler.js"></script>
+    <script src="./add-days-calender.js"></script>
+    <script src="./submit.js"></script>
+</body>
+
+
+</html>
