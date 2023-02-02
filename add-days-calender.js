@@ -38,7 +38,7 @@ function getDaysApi() {
         try {
             console.log(document.querySelector(`[id='${newDate}']`).classList.add('booked'));
         } catch (error) {
-            console.log(error)
+
         }
 
     }
