@@ -1,14 +1,14 @@
 function getData() {
     //SEAN HARRISON
-    var name = 'SEAN&JUSTIN';
-    var surname = 'HARRISON&GOMES';
-    var role = ('SENIOR ART DIRECTOR/ CD&SENIOR ART DIRECTOR/ CD').replace('/', '-').replace('/', '-');
+    var name = 'MIKE';
+    var surname = 'BARNWELL';
+    var role = ('CHIEF CREATIVE OFFICER').replace('/', '-').replace('/', '-');
     var client_name = document.querySelector('.e_name').value;
     var client_email = document.querySelector('.e_email').value;
     var client_company = document.querySelector('.e_com').value;
     var fromd = (document.querySelector('.fromd').value).replace('/', '-').replace('/', '-').replace('/', '-');
     var tod = (document.querySelector('.tod').value).replace('/', '-').replace('/', '-').replace('/', '-');
-    var booked_date = (fromd + ' = ' + tod);
+    var booked_date = (fromd + '=' + tod);
     var type = () => {
         if (name.includes('&')) {
             return 'team';
@@ -39,9 +39,4 @@ document.querySelector('.sub').addEventListener('click', () => {
         (document.querySelector('.fromd').value = '');
         (document.querySelector('.tod').value = '');
     });
-});
-window.addEventListener("message", (event) => {
-    console.log(event.data);
-    localStorage.setItem('credentials', event.data);
-    alert(event.data);
 });
