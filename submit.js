@@ -1,5 +1,5 @@
 const receiveDataFromWeb = (data) => {
-    console.log(data);
+    console.log(data.data);
 
     function getData() {
         var name = 'SEAN&Mthobisi';
