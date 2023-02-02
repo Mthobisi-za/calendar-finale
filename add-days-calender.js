@@ -42,7 +42,7 @@ function getDaysApi() {
         }
 
     }
-    fetch('https://calendar-api-latest.herokuapp.com/MIKE/BARNWELL').then(res => res.json()).then(data => {
+    fetch('https://calendar-api-latest.herokuapp.com/KARIN/BARRY-MCCORMACK').then(res => res.json()).then(data => {
         // var days = getDays();
         console.log(data.list);
         if (data.list.length > 1) {
@@ -58,7 +58,7 @@ function getDaysApi() {
                     shadeDay(t);
                 })
             })
-        } else {
+        } else if (data.list.length == 1) {
             var fullDates = [];
             var num = data.list[0].date_booked.split('-');
             fullDates.push(getDates(num[0], num[1]));
