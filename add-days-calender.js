@@ -34,7 +34,9 @@ function getDaysApi() {
 
     function shadeDay(date) {
         var dates = Number(date.split('/')[1]);
-        var newDate = date.split('/')[0] + '/' + dates + '/' + date.split('/')[2];
+        var endof = Number(date.split('/')[2]);
+        var newDate = date.split('/')[0] + '/' + dates + '/' + endof;
+        console.log(newDate + ' >>>');
         try {
             console.log(document.querySelector(`[id='${newDate}']`).classList.add('booked'));
         } catch (error) {
