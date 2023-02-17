@@ -142,14 +142,14 @@ body {
     box-sizing: border-box;
     z-index: 3;
     display: block;
-    color: #1a6fc4;
+    color: black;
     font-size: 17px;
     font-family: "Oxygen", sans-serif;
     transition: top 0.1s ease-in-out;
 }
 
 .input-group input::placeholder {
-    color: rgba(0, 0, 0, 0);
+    color: black;
 }
 
 .input-group input:focus,
